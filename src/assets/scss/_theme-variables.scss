@@ -5,30 +5,31 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
 :root {
-
-	--font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-	--font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  --font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  --font-family-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
   --font-size-small: 12px;
-  
-  --primary-color: #5C2941;
-  --header-bg: #5C2941;
 
-  --home-link-color: #A1613F;
-  --home-link-hover-color:  var(--primary-color);
+  --primary-color: #b2ffff;
+  --header-bg: #b2ffff;
+  --text-color: var(--primary-color);
 
-  --button-color: #E5C3D3;
-  --button-alternate-color: #5C2941;
+  --home-link-color: #a1613f;
+  --home-link-hover-color: var(--primary-color);
 
-  --post-link-color: #0F070B;
+  --button-color: #333;
+  --button-alternate-color: #b2ffff;
 
+  --post-link-color: #0f070b;
 
-  --nav-link-hover-bg: #111;
-  --text-color-meta: rgba(0,0,0,0.5);
+  --nav-link-hover-bg: var(--primary-color);
+  --text-color-meta: rgba(0, 0, 0, 0.5);
 
-  --label-text: rgba(0,0,0,0.5);
-  --input-focus-border: #83AAAC;
-  
+  --label-text: rgba(0, 0, 0, 0.5);
+  --input-focus-border: #83aaac;
+
   // CSS Grid Utility
-  --grid-gap: 30px; 
-
+  --grid-gap: 30px;
 }
+
