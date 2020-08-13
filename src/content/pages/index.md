@@ -2,7 +2,7 @@
 template: index-page
 slug: /
 title: Kristin LeGard
-tagline: Plant-focused Fitness and Wellness
+tagline: Primarily Plant-based Fitness and Wellness
 featuredImage: /assets/header-kettlebell.jpg
 cta:
   ctaText: My story

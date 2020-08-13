@@ -12,13 +12,14 @@ $breakpoint-xl: 1200px;
   --font-size-small: 12px;
 
   --primary-color: #b2ffff;
-  --header-bg: #b2ffff;
-  --text-color: var(--primary-color);
+  --secondary-color: #b2ffff;
+  --header-bg: var(--primary-color);
 
   --home-link-color: #a1613f;
   --home-link-hover-color: var(--primary-color);
 
-  --button-color: #333;
+  --text-color: #333;
+  --button-color: var(--text-color);
   --button-alternate-color: #b2ffff;
 
   --post-link-color: #0f070b;
@@ -32,4 +33,3 @@ $breakpoint-xl: 1200px;
   // CSS Grid Utility
   --grid-gap: 30px;
 }
-

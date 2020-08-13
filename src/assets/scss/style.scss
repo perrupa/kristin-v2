@@ -23,21 +23,23 @@
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  ul li {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  a {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    &:hover {
-      color: rgba(255, 255, 255, 0.8);
+
+    li {
+      display: inline-block;
+      margin-left: 20px;
     }
   }
-  a[aria-current="page"] {
-    color: rgba(255, 255, 255, 1);
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+
+    &:hover,
+    &[aria-current="page"] {
+      text-decoration: underline;
+    }
   }
+
   .menu-trigger {
     display: none;
     font-size: 24px;

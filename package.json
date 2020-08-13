@@ -1,8 +1,8 @@
 {
   "name": "@stackrole/gatsby-starter-foundation",
-  "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
+  "description": "Kristin LeGard Fitness",
   "version": "1.0.0",
-  "author": "Stackrole <stackrole@gmail.com>",
+  "author": "Kristin LeGard and Chris Marlow",
   "license": "MIT",
   "repository": {
     "type": "git",
