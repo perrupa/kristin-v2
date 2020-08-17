@@ -1,9 +1,8 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
-import { RiArrowRightSLine } from "react-icons/ri"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import { HomePageHeader } from "../components/home-page-header/index"
 import BlogListHome from "../components/blog-list-home"
 import SEO from "../components/seo"
 
@@ -35,41 +34,26 @@ export const pageQuery = graphql`
 `
 
 const HomePage = ({ data }) => {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  const Image = frontmatter.featuredImage
+  const image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.fluid
     : ""
+  const CTA = {
+    text: frontmatter.cta.ctaText,
+    link: frontmatter.cta.ctaLink,
+  }
   return (
-    <Layout>
+    <Layout header={false}>
+      <HomePageHeader
+        title={frontmatter.title}
+        tagline={frontmatter.tagline}
+        content={html}
+        image={image}
+        CTA={CTA}
+      />
       <SEO />
-      <div className="home-banner grids col-1 sm-2">
-        <div>
-          <h1 class="title">{frontmatter.title}</h1>
-          <p class="tagline">{frontmatter.tagline}</p>
-          <div
-            className="description"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-          <Link to={frontmatter.cta.ctaLink} className="button">
-            {frontmatter.cta.ctaText}
-            <span class="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link>
-        </div>
-        <div>
-          {Image ? (
-            <Img
-              fluid={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image"
-            />
-          ) : (
-            ""
-          )}
-        </div>
-      </div>
+
       <BlogListHome />
     </Layout>
   )

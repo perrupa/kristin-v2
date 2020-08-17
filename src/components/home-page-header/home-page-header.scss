@@ -1,0 +1,44 @@
+.homepage-header {
+  position: relative;
+}
+
+.homepage-header__titleContainer {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  right: 5vw;
+  z-index: 1;
+  color: #fff;
+  line-height: 0;
+}
+
+.homepage-header__title {
+  font-size: 13vw;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.homepage-header__tagline {
+  margin-top: -1em;
+  font-size: 3vw;
+  max-width: 600px;
+  line-height: 1.2;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.homepage-header__image {
+  width: 100%;
+}
+
+.homepage-header__content {
+  position: relative;
+  max-width: 600px;
+  margin: -2em 5vw 2em;
+  padding: 0.5em 1em;
+  color: #fff;
+  background-color: #000;
+
+  p {
+    line-height: 1.2;
+  }
+}
