@@ -1,8 +1,9 @@
 ---
 template: contact-page
 slug: /contact
-title: Get in touch
+title: Get in touch!
 ---
-Got a burning question regarding **JAMstack**, Need a new **Website**, or just anything in general. We are happy to talk.
 
-Just send us a message using the form below or you can send us a DM on [Twitter](https://twitter.com/stackrole)
+I would love to to chat with you over email, WhatsApp or video call to get a sense of your diet and/or fitness goals. 💪
+
+Send me a quick message through this form and we arrange a quick, no-commitment call to get to know each other and understand how I can help you start to feel your best self!
