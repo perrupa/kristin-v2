@@ -18,11 +18,11 @@ $breakpoint-xl: 1200px;
   --home-link-color: #a1613f;
   --home-link-hover-color: var(--primary-color);
 
-  --text-color: #333;
+  --text-color: #111;
   --button-color: var(--text-color);
   --button-alternate-color: #b2ffff;
 
-  --post-link-color: #0f070b;
+  --post-link-color: var(--text-color);
 
   --nav-link-hover-bg: var(--primary-color);
   --text-color-meta: rgba(0, 0, 0, 0.5);

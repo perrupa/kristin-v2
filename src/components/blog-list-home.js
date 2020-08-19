@@ -4,19 +4,26 @@ import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
 
 import PostCard from "./post-card"
 
-const PostMaker = ({ data }) => (
+const PostMaker = ({ posts }) => (
   <section className="home-posts">
-    <h2>Latest in <strong>Blog</strong> <span class="icon -right"><RiArrowDownLine/></span></h2>
+    <h2>Articles</h2>
     <div className="grids col-1 sm-2 lg-3">
-      {data}
+      {posts.map(edge => (
+        <PostCard key={edge.node.id} data={edge.node} />
+      ))}
     </div>
-    <Link className="button" to="/blog">See more<span class="icon -right"><RiArrowRightSLine/></span></Link>
+    <Link className="button" to="/blog">
+      See more
+      <span class="icon -right">
+        <RiArrowRightSLine />
+      </span>
+    </Link>
   </section>
 )
 
 export default function BlogListHome() {
   return (
-    <StaticQuery 
+    <StaticQuery
       query={graphql`
         query {
           allMarkdownRemark(
@@ -44,18 +51,15 @@ export default function BlogListHome() {
               }
             }
           }
-        }`
-      }
-
-      render={ data => {
-          const posts = data.allMarkdownRemark.edges
-            .filter(edge => !!edge.node.frontmatter.date)
-            .map(edge =>
-              <PostCard key={edge.node.id} data={edge.node} />
-          )
-          return <PostMaker data={posts} />
-        } 
-      }
+        }
+      `}
+      render={data => {
+        const posts = data.allMarkdownRemark.edges.filter(
+          edge => !!edge.node.frontmatter.date
+        )
+        return <PostMaker posts={posts} />
+      }}
     />
   )
 }
+

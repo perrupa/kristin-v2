@@ -32,11 +32,13 @@
 
 .homepage-header__content {
   position: relative;
-  max-width: 600px;
-  margin: -2em 5vw 2em;
-  padding: 0.5em 1em;
+  padding: 0.5em 1em 1em;
+
   color: #fff;
   background-color: #000;
+
+  max-width: 600px;
+  margin: 4em auto;
 
   p {
     line-height: 1.2;

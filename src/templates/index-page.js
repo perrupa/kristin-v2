@@ -54,7 +54,7 @@ const HomePage = ({ data }) => {
       />
       <SEO />
 
-      <BlogListHome />
+      {/* <BlogListHome /> */}
     </Layout>
   )
 }
